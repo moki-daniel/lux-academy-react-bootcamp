@@ -68,12 +68,14 @@ while (n >= 0) {
     } else if (n===6) {
        console.log("Main engine start") 
     } else if (n===0) {
-       console.log("Solid rocket booster ignition and liftoff!") 
-    
+       console.log("Solid rocket booster ignition and liftoff!")
+       
     } else {
-       console.log("T-" +n+ "Seconds")
-        
-    }
-n = n-1;
+        console.log("T-" +n+ "Seconds")
+         
+     }
     
+    
+n = n-1;
+
 }
