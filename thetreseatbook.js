@@ -31,8 +31,17 @@ Example output for row-seat information: output each row and seat number on a se
  */
  
 // Write your code here
-for (let row = 0; row < 26; row ++) {
-    for (let seat = 0; seat < 100; seat++) {
-        console.log("Your seat is placed in row" + " " +row+ " " + "seat number" + " " +seat+ ".")
+
+var row = 0;  // initial value of the row
+var seat = 0; // initial value of the seat within a row
+
+// One loop inside another is called Nested loop.
+// Outer `for` loop, to iterate over the rows
+for (row = 0; row <= 25; row++){
+
+    // Inner `for` loop, to iterate over the seats within a row
+    // In this loop, the value of `row` variable would change only after 100 iterations
+    for(seat = 0; seat <= 99; seat++){
+        console.log(row+"-"+seat);
     }
 }
